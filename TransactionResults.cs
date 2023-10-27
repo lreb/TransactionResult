@@ -145,7 +145,7 @@ namespace StandardTransaction
         public StandardResponse CreateWarningResponse(string message)
         {
             var result = new StandardResponse();
-            InitializeResult(ref result, Result.ERROR);
+            InitializeResult(ref result, Result.WARNING);
             result.Message = message;
             return result;
         }
